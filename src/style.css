@@ -1,0 +1,211 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  height: 50px;
+  position: relative;
+}
+
+nav {
+  background-color: #212121;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  height: 70px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 13px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.menu .menu_link {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.menu .menu_item {
+  border-right: 2px dotted black;
+  padding-right: 70px;
+}
+
+.subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.subheader .subheader_col {
+  display: block;
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: #fff;
+}
+
+.subheader .subheader_phone {
+  display: block;
+  margin-top: 7px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 12px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.subheader_btn {
+  margin-top: 19px;
+  text-transform: uppercase;
+  width: 172px;
+  height: 46px;
+  border: none;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1EACC7), to(#4CE2FF));
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+  -webkit-box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.promo {
+  min-height: 800px;
+  background: url(img/uber_bg.png) center center/cover no-repeat;
+  padding: 135px 0 185px 0;
+}
+
+.promo .promo_header {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.promo .promo_subheader {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.promo .promo_descr {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.promo .promo_btn {
+  display: block;
+  margin: 120px auto 0 auto;
+  border: none;
+  width: 259px;
+  height: 63px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1EACC7), to(#4CE2FF));
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+  -webkit-box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 63px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.lable {
+  width: 113px;
+  height: 24px;
+  padding: 5px 12px;
+  background-color: #000;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+}
+
+.reasons {
+  padding: 20px 0 60px 0;
+}
+
+.title {
+  font-weight: 700;
+  margin-top: 43px;
+  font-size: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.reasons .reasons_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.reasons .reasons_block .reasons_round {
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 116px;
+  height: 116px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1EACC7;
+  margin-right: 20px;
+}
+
+.reasons .reasons_block .reasons_descr {
+  width: 340px;
+}
+
+.reasons .reasons_block .reasons_descr .reasons_subtitle {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #1EACC7;
+}
+
+.reasons .reasons_block .reasons_descr .reasons_text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 21px;
+  color: #222;
+}
+/*# sourceMappingURL=style.css.map */
