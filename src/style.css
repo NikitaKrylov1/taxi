@@ -208,4 +208,22 @@ nav {
   line-height: 21px;
   color: #222;
 }
+
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("img/mobile_uber/mobile_bg.png") center center/cover no-repeat;
+}
+
+.mobile_item {
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+
+.mobile_item_1 {
+  background: url("img/mobile_uber/kartochka_1.png") center center/cover no-repeat;
+}
 /*# sourceMappingURL=style.css.map */
