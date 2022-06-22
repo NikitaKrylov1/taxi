@@ -215,6 +215,18 @@ nav {
   background: url("img/mobile_uber/mobile_bg.png") center center/cover no-repeat;
 }
 
+.mobile .subtitle {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .mobile_item {
   width: 320px;
   height: 280px;
@@ -223,7 +235,42 @@ nav {
   padding-top: 92px;
 }
 
+.mobile_item_title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+
 .mobile_item_1 {
   background: url("img/mobile_uber/kartochka_1.png") center center/cover no-repeat;
+}
+
+.mobile_item_2 {
+  background: url("img/mobile_uber/kartochka_2.png") center center/cover no-repeat;
+}
+
+.mobile_item_3 {
+  background: url("img/mobile_uber/kartochka_3.png") center center/cover no-repeat;
+}
+
+.mobile_item_4 {
+  background: url("img/mobile_uber/kartochka_4.png") center center/cover no-repeat;
+}
+
+.mobile_item_5 {
+  background: url("img/mobile_uber/kartochka_5.png") center center/cover no-repeat;
+}
+
+.mobile_item_6 {
+  background: url("img/mobile_uber/kartochka_6.png") center center/cover no-repeat;
 }
 /*# sourceMappingURL=style.css.map */
