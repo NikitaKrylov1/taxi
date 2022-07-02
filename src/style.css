@@ -297,6 +297,24 @@ nav {
   cursor: pointer;
 }
 
+.mobile_item_plus::before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+}
+
+.mobile_item_plus::after {
+  content: '';
+  position: absolute;
+  left: 49%;
+  display: block;
+  width: 2px;
+  height: 14px;
+  background-color: #1eacc7;
+}
+
 .choice {
   position: relative;
   min-height: 895px;

@@ -1,3 +1,4 @@
+$maincolor: #1eacc7
 *
   font-family: 'Roboto', sans-serif
   
@@ -215,6 +216,20 @@ nav
       transform: translateX(-50%)
       bottom: 35px
       cursor: pointer
+      &::before
+        content: ''
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $maincolor
+      &::after
+        content: ''
+        position: absolute
+        left: 49%
+        display: block
+        width: 2px
+        height: 14px
+        background-color: $maincolor
 
 .choice
   position: relative
