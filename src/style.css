@@ -295,6 +295,8 @@ nav {
           transform: translateX(-50%);
   bottom: 35px;
   cursor: pointer;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .mobile_item_plus::before {
@@ -313,6 +315,19 @@ nav {
   width: 2px;
   height: 14px;
   background-color: #1eacc7;
+}
+
+.mobile_item_plus:hover {
+  background-color: gold;
+  color: #fff;
+}
+
+.mobile_item_plus:active {
+  background-color: #00f;
+}
+
+.mobile_item_plus:focus {
+  background-color: #777;
 }
 
 .choice {

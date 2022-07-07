@@ -216,6 +216,7 @@ nav
       transform: translateX(-50%)
       bottom: 35px
       cursor: pointer
+      transition: 0.8s
       &::before
         content: ''
         display: block
@@ -230,6 +231,13 @@ nav
         width: 2px
         height: 14px
         background-color: $maincolor
+      &:hover
+        background-color: gold
+        color: #fff
+      &:active
+        background-color: #00f
+      &:focus
+        background-color: #777
 
 .choice
   position: relative
