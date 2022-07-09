@@ -1,5 +1,5 @@
 $maincolor: #1eacc7
-$secondcolor: #1ca8c3
+$secondcolor: #ff5656
 *
   font-family: 'Roboto', sans-serif
   
@@ -11,7 +11,7 @@ nav
   background-color: #212121
   width: 100%
   position: fixed
-  z-index: 2
+  z-index: 5
   height: 70px
 
 .menu
@@ -131,6 +131,14 @@ nav
   color: #FFFFFF
   mix-blend-mode: normal
 
+.subtitle
+  position: relative
+  margin-top: 19px
+  color: #222222
+  font-size: 17px
+  font-weight: 400
+  text-align: center
+
 .reasons
   padding: 20px 0 60px 0
 
@@ -141,6 +149,10 @@ nav
   text-align: center
   text-transform: uppercase
   color: #222222
+  position: relative
+  z-index: 2
+  &_white
+    color: #fff
 
 .reasons .reasons_block
   display: flex
@@ -319,7 +331,7 @@ nav
 				top: 3px
 				width: 21px 
 				height: 20px
-				background: url('../icons/check_blue.svg') center (center / cover) no-repeat
+				background: url('img/check_blue.svg') center (center / cover) no-repeat
 	&_descr 
 		margin-top: 25px
 		font-size: 17px
@@ -328,8 +340,8 @@ nav
 		color: #1ca8c3
 	.warning 
 		.require_title
-			color: $second-color
+			color: $secondcolor
 		.require_list
 			li 
 				&:before
-					background: url('../icons/check_red.svg') center (center / cover) no-repeat
+					background: url('img/check_red.svg') center (center / cover) no-repeat

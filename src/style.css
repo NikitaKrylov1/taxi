@@ -11,7 +11,7 @@ nav {
   background-color: #212121;
   width: 100%;
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   height: 70px;
 }
 
@@ -153,6 +153,15 @@ nav {
   mix-blend-mode: normal;
 }
 
+.subtitle {
+  position: relative;
+  margin-top: 19px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+}
+
 .reasons {
   padding: 20px 0 60px 0;
 }
@@ -164,6 +173,12 @@ nav {
   text-align: center;
   text-transform: uppercase;
   color: #222222;
+  position: relative;
+  z-index: 2;
+}
+
+.title_white {
+  color: #fff;
 }
 
 .reasons .reasons_block {
@@ -419,7 +434,7 @@ nav {
 }
 
 .require {
-  padding: 68px;
+  padding: 68px 0 84px 0;
 }
 
 .require_block {
@@ -428,5 +443,52 @@ nav {
 
 .require_block_nmb {
   margin-bottom: 0px;
+}
+
+.require_title {
+  color: #1ca8c3;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+
+.require_list li {
+  position: relative;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.require_list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url("img/check_blue.svg") center center/cover no-repeat;
+}
+
+.require_descr {
+  margin-top: 25px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #1ca8c3;
+}
+
+.require .warning .require_title {
+  color: #ff5656;
+}
+
+.require .warning .require_list li:before {
+  background: url("img/check_red.svg") center center/cover no-repeat;
 }
 /*# sourceMappingURL=style.css.map */
