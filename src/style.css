@@ -25,17 +25,20 @@ nav {
   padding: 13px;
   list-style-type: none;
   margin: 0;
+  z-index: 15;
 }
 
 .menu .menu_link {
   color: #ffffff;
   font-size: 15px;
   font-weight: 300;
+  z-index: 16;
 }
 
 .menu .menu_item {
   border-right: 2px dotted black;
   padding-right: 70px;
+  z-index: 17;
 }
 
 .subheader {
@@ -413,5 +416,17 @@ nav {
   width: 100%;
   background-color: #070716;
   z-index: 1;
+}
+
+.require {
+  padding: 68px;
+}
+
+.require_block {
+  margin: 33px 0;
+}
+
+.require_block_nmb {
+  margin-bottom: 0px;
 }
 /*# sourceMappingURL=style.css.map */

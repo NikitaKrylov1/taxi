@@ -1,4 +1,5 @@
 $maincolor: #1eacc7
+$secondcolor: #1ca8c3
 *
   font-family: 'Roboto', sans-serif
   
@@ -19,15 +20,18 @@ nav
   padding: 13px
   list-style-type: none
   margin: 0
+  z-index: 15
 
   .menu_link
     color: #ffffff
     font-size: 15px
     font-weight: 300
+    z-index: 16
 
   .menu_item
     border-right: 2px dotted black
     padding-right: 70px
+    z-index: 17
 
 .subheader
   position: absolute
@@ -286,3 +290,46 @@ nav
     width: 100%
     background-color: #070716
     z-index: 1
+
+.require
+	padding: 68px 0 84px 0
+	&_block 
+		margin: 33px 0
+		&_nmb
+			margin-bottom: 0px
+	&_title 
+		color: #1ca8c3
+		font-size: 22px
+		font-weight: 400
+	&_list 
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		li 
+			position: relative
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px
+			margin-bottom: 10px
+			&:before 
+				content: ''
+				display: block 
+				position: absolute
+				left: -32px
+				top: 3px
+				width: 21px 
+				height: 20px
+				background: url('../icons/check_blue.svg') center (center / cover) no-repeat
+	&_descr 
+		margin-top: 25px
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+		color: #1ca8c3
+	.warning 
+		.require_title
+			color: $second-color
+		.require_list
+			li 
+				&:before
+					background: url('../icons/check_red.svg') center (center / cover) no-repeat
