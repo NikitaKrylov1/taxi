@@ -491,4 +491,74 @@ nav {
 .require .warning .require_list li:before {
   background: url("img/check_red.svg") center center/cover no-repeat;
 }
+
+.world {
+  height: 720px;
+  background: url("img/cities/world_bg.png") center center/cover no-repeat;
+}
+
+.world .label_white {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+  color: #000;
+  background: #fff center center/cover no-repeat;
+  width: 113px;
+}
+
+.world .title_white {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+  color: #fff;
+}
+
+.world .subtitle_white {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+  color: #fff;
+}
+
+.world .show_all_cities_btn {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+  color: #1FBAD6;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 500px;
+}
 /*# sourceMappingURL=style.css.map */
