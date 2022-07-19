@@ -118,26 +118,37 @@ nav
     color: #FFFFFF
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
 
-.lable
-  width: 113px
-  height: 24px
-  padding: 5px 12px
-  background-color: #000
-  font-weight: 400
-  font-size: 11px
-  text-align: center
-  text-transform: uppercase
-  margin: 0 auto
-  color: #FFFFFF
-  mix-blend-mode: normal
+.label
+	position: relative
+	margin: 0 auto
+	height: 24px
+	width: 112px
+	padding: 5px 12px
+	background-color: #000000
+	color: #ffffff
+	font-size: 11px
+	font-weight: 300
+	text-transform: uppercase
+	text-align: center
+	z-index: 2
+	&_white 
+		background-color: #fff
+		color: #000
+	&_min 
+		width: 76px
+
 
 .subtitle
-  position: relative
-  margin-top: 19px
-  color: #222222
-  font-size: 17px
-  font-weight: 400
-  text-align: center
+	position: relative
+	margin-top: 19px
+	color: #222222
+	font-size: 17px
+	font-weight: 400
+	text-align: center
+	z-index: 2
+	&_white 
+		color: #fff
+
 
 .reasons
   padding: 20px 0 60px 0
@@ -346,39 +357,90 @@ nav
 				&:before
 					background: url('img/check_red.svg') center (center / cover) no-repeat
 
-.world
-  height: 720px
-  background: url('img/cities/world_bg.png') center (center / cover) no-repeat
-  .label_white
-    position: relative
-    justify-content: center
-    align-items: center
-    display: flex
-    z-index: 3
-    color: #000
-    background: #fff center (center / cover) no-repeat
-    width: 113px
-  .title_white
-    position: relative
-    justify-content: center
-    align-items: center
-    display: flex
-    z-index: 3
-    color: #fff
-  .subtitle_white
-    position: relative
-    justify-content: center
-    align-items: center
-    display: flex
-    z-index: 3
-    color: #fff
-  .show_all_cities_btn
-    position: relative
-    justify-content: center
-    align-items: center
-    display: flex
-    z-index: 3
-    color: #1FBAD6
-    text-transform: uppercase
-    cursor: pointer
-    margin-top: 500px
+.world 
+	position: relative
+	min-height: 717px
+	padding: 49px 0
+	background: url('img/cities/world_bg.png') center (center / cover) no-repeat
+	&_link 
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 49px
+		text-align: center
+		font-size: 15px
+		font-weight: 400
+		line-height: 68px
+		text-transform: uppercase
+		color: #1fbad6
+		&:hover 
+			text-decoration: none
+			color: #fff
+
+footer 
+	padding: 14px 23px 39px 23px
+	a 
+		&:hover 
+			text-decoration: none
+.footer
+	&_divider
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+		margin: 0 auto
+	&_wrapper
+		display: flex 
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+	&_wrapper > div 
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
+  &_social
+		width: 160px
+		display: flex
+		justify-content: space-between
+		&_item 
+			display: flex 
+			justify-content: center
+			align-items: center
+			margin: 0 4px 
+			width: 32px
+			height: 32px
+			background-color: #070716
+			border-radius: 100%
+			i 
+				color: #fff
+  &_links
+		width: 390px
+		margin: 0 auto
+		&_main 
+			display: flex 
+			justify-content: space-between
+			padding: 0 10px
+			a 
+				color: #070716
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+		&_sub 
+			display: flex 
+			justify-content: space-between
+			margin-top: 10px
+			a 
+				color: #999999
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+		&_lang 
+			display: block 
+			margin: 0 auto
+			color: #1fbad6
+			font-size: 11px
+			font-weight: 400
+			margin-top: 19px
+			text-transform: uppercase
+			text-align: center
+
