@@ -470,4 +470,10 @@ footer a:hover {
   margin-top: 19px;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .menu_link {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=style.css.map */
