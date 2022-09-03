@@ -1,6 +1,10 @@
+
 header
   position: relative
   height: 50px
+
+.hamburger
+  display: none
 
 nav
   position: fixed
@@ -16,14 +20,16 @@ nav
   list-style-type: none
   margin: 0
 
-  .menu_link
+  &_link
     color: white
     font-size: 15px
     font-weight: 300
 
-  .menu_item
+  &_item
     border-right: 2px dotted black
     padding-right: 28px
+    &:last-child
+      border-right: none
 
 .subheader
   position: absolute
@@ -32,7 +38,7 @@ nav
   height: 84px
   background-color: rgba(0, 0, 0, 0.6)
 
-  .subheader_call
+  &_call
     margin-top: 20px
     font-weight: 300
     font-size: 12px
@@ -40,7 +46,7 @@ nav
     text-align: right
     color: #FFFFFF
 
-  .subheader_phone
+  &_phone
     display: block
     margin-top: 10px
     font-weight: 400
@@ -50,9 +56,8 @@ nav
     color: #FFFFFF
     text-transform: uppercase
     width: 200px
-    margin-left: -20px
 
-  .subheader_btn
+  &_btn
     margin-top: 19px
     width: 172px
     height: 46px
@@ -71,7 +76,7 @@ nav
   background: url('img/first_screen/uber_bg.png') center (center / cover) no-repeat
   padding: 135px 0 185px 0
 
-  .promo_header
+  &_header
     font-weight: 700
     font-size: 60px
     line-height: 60px
@@ -79,7 +84,7 @@ nav
     text-transform: uppercase
     color: #FFFFFF
 
-  .promo_subheader
+  &_subheader
     font-weight: 700
     font-size: 36px
     line-height: 36px
@@ -87,7 +92,7 @@ nav
     text-transform: uppercase
     color: #FFFFFF
 
-  .promo_descr
+  &_descr
     margin-top: 20px
     font-weight: 300
     font-size: 18px
@@ -95,7 +100,7 @@ nav
     text-align: center
     color: #FFFFFF
 
-  .promo_btn
+  &_btn
     display: block
     margin: 120px auto 0 auto
     border: none
@@ -113,6 +118,37 @@ nav
 
 .reasons
   padding: 20px 0 65px 0
+
+  &_block
+    display: flex
+    justify-content: center
+    text-align: left
+    margin-top: 20px
+
+  &_round
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 20px
+    width: 116px
+    height: 116px
+    background: #1EACC7
+    border-radius: 100%
+
+  &_descr
+    width: 340px
+
+  &_subtitle
+    font-weight: 400
+    font-size: 17px
+    line-height: 21px
+    color: #1EACC7
+
+  &_text
+    font-weight: 300
+    font-size: 15px
+    line-height: 21px
+    color: #222222
 
 .label
   position: relative
@@ -161,36 +197,7 @@ nav
 
 
 
-.reasons .reasons_block
-  display: flex
-  justify-content: center
-  text-align: left
-  margin-top: 20px
 
-  .reasons_round
-    display: flex
-    justify-content: center
-    align-items: center
-    margin-right: 20px
-    width: 116px
-    height: 116px
-    background: #1EACC7
-    border-radius: 100%
-
-  .reasons_descr
-    width: 340px
-
-    .reasons_subtitle
-      font-weight: 400
-      font-size: 17px
-      line-height: 21px
-      color: #1EACC7
-
-    .reasons_text
-      font-weight: 300
-      font-size: 15px
-      line-height: 21px
-      color: #222222
 
 .mobile
     min-height: 864px
@@ -273,7 +280,7 @@ nav
     position: relative
     z-index: 2
     display: block
-    margin: 56px auto 0 auto  
+    margin: 56px auto 0 auto
   .black
     position: absolute
     top: 0
